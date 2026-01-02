@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoxy</title>
+    <link rel="icon" type="image/png" href="/epx_prop.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    code {
+        background: #f4f1ea !important;
+        color: var(--color-gray-700) !important;
+    }
+    .filter-invert-except-img {
+        filter: invert();
+    }
+    .filter-invert-except-img img {
+        filter: invert();
+    }
+    </style>
+    <link rel="stylesheet" href="highlight.css"/>
+   </head>
+  <body class="filter-invert-except-img min-h-screen bg-zinc-950 text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="src/main.tsx"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/properties.min.js"></script>
+    <script src="language-epoxy.js"></script>
+    <script>window.onload = function() {hljs.highlightAll();};</script>
+  </body>
+</html>
